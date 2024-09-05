@@ -141,6 +141,9 @@ section {
     color: white;
 }
 
+.container .box {
+    text-align: center;
+}
 
 footer {
     background-color: #7712f3;
@@ -202,6 +205,10 @@ a.badgesocial img {
 
     .container {
         padding: 20px;
+        text-align: center;
+    }
+
+    .container .box p{
         text-align: center;
     }
 
