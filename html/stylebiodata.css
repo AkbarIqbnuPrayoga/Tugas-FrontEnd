@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 95%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav__content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #a855f7;
+    transition: 0.3s;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+nav .logo a:hover {
+    color: #9333ea;
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 2rem;
+    color: #a855f7;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: #1f2937;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    border-top-color: #ca8a04;
+    border-bottom-color: #ca8a04;
+    color: #ca8a04;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: medium;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+}
+
+.about-section .profile-image {
+    width: 100%;
+    max-width: 270px;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.about-section .text h2 {
+    font-size: 1.75rem;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.about-section .text p {
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.bio-list, .education-list, .contact-list {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.bio-list li, .education-list li, .contact-list li {
+    padding: 10px 0;
+}
+
+.bio-list li, .contact-list li {
+    font-size: medium;
+    color: #1f2937;
+}
+
+#boxBawah {
+    background-color: #7712f3;
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+}
+
+#boxBawah .box {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.box .bawahwa{
+    color: white;
+}
+
+
+footer {
+    background-color: #7712f3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+a.badgesocial img {
+    width: 40px;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container li{
+        text-align: left;
+    }
+
+    .container p{
+        text-align: left;
+    }
+
+
+    ul {
+        flex-direction: column;
+        background-color: #faf5ff;
+        position: absolute;
+        width: 100%;
+        top: 85px;
+        gap: 3rem;
+        left: -100%;
+        height: calc(100vh - 85px);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav .checkbox {
+        display:flex;
+        text-align: right;
+    }
+
+    .box .bawahwa{
+        color: white;
+    }
+
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #boxBawah .box {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+}
+
